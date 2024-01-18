@@ -1,10 +1,13 @@
 # Table 
-![Screenshot (96)](https://github.com/radheshyamgupta01/Iwcn-task/assets/142769686/98f89dc7-8c1e-457c-a596-6ad540ec1608)
+![Screenshot (104)](https://github.com/radheshyamgupta01/Iwcn-task/assets/142769686/9f48c1c3-7fb6-4260-9041-6067733425cb)
+
 # Note 
-![Screenshot (97)](https://github.com/radheshyamgupta01/Iwcn-task/assets/142769686/48d9e479-8073-43ab-9d95-fc15d00c172e)
+![Screenshot (102)](https://github.com/radheshyamgupta01/Iwcn-task/assets/142769686/71968e74-1130-4234-88e5-6a2e6c9bcb82)
+
 
 # Response header
-![Screenshot (100)](https://github.com/radheshyamgupta01/Iwcn-task/assets/142769686/72b45471-0168-46d0-8d33-1589792a79ce)
+![Screenshot (106)](https://github.com/radheshyamgupta01/Iwcn-task/assets/142769686/c055ac49-8346-4525-8d82-fe13cad28a5d)
+
 
 
 

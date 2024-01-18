@@ -21,16 +21,13 @@ const Task3 = () => {
         throw new Error(`API request failed with status ${response.status}`);
       }
 
-   
-     
-
-    
+  
       const contentType = response.headers.get('Content-Type');
       const contentLength = response.headers.get('Content-Length');
       // const date = response.headers.get('Date');
       // const phoneOrigin = response.headers.get('Phoneorigen');
       
-      const headersString = `Content-Type: ${contentType}\nContent-Length: ${contentLength}`;
+      const headersString = `Content-Type: ${contentType},Content-Length: ${contentLength}`;
       
 
       const data = await response.json();

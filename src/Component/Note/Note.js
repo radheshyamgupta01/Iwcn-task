@@ -33,6 +33,8 @@ function Note() {
     } catch (error) {
       console.error("Error:", error);
     }
+    setContent("")
+    setNewNote("")
   };
   const NoteDeleteHandler = async (noteId) => {
     try {
@@ -65,7 +67,26 @@ function Note() {
 
         const data = await response.json();
         console.log(data);
-        setNoteData(data);
+
+
+const formattedData = [];
+
+for (let i = 0; i < data.length; i++) {
+  const entry = data[i];
+  const resObj= {
+    id: entry.id,
+    title: entry.title,
+    content: entry.content,
+    createdAt: new Date(entry.createdAt).toLocaleString(), 
+    updatedAt: new Date(entry.updatedAt).toLocaleString(), 
+  };
+
+
+  formattedData.push(resObj);
+}
+
+
+        setNoteData(formattedData);
       } catch (error) {
         console.error(error);
       }
@@ -114,7 +135,7 @@ function Note() {
             key={index}
             className="relative flex max-w-[20rem] flex-col rounded-xl bg-gradient-to-tr from-blue-600 to-pink-400 bg-clip-border p-8 text-white shadow-md shadow-pink-500/40"
           >
-            <p className="block font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
+            <p className="block   font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
               {note.title}
             </p>
             <p className="block mt-4 font-sans text-base font-normal leading-relaxed text-inherit antialiased">
